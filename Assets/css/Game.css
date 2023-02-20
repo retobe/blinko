@@ -1,0 +1,236 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: none;
+}
+
+.game-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center the boxes horizontally */
+  align-items: center; /* center the boxes vertically */
+  height: 100vh; /* set the height of the game-page to 100% of the viewport */
+}
+
+
+.game-modes-container {
+  margin-bottom: 20px;
+  background-color: #ff4848;
+  box-shadow: 2px 5px 12px black;
+  border-radius: 30px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+}
+
+.game-modes-container:hover {
+  transform: scale(1.2);
+}
+
+.header {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.description1 {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+}
+
+.description {
+  text-align: center; /* center the text */
+  margin-top: 10px; /* add a margin-top to separate it from the title */
+  width: 100%; /* set the width to 100% to fit it in the box */
+  text-shadow: 2px 2px 8px white;
+  color: rgb(255, 255, 255);
+}
+
+.boxes-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin: auto;
+  margin-top: 3rem;
+  grid-gap: 2rem;
+}
+
+.game-box {
+  width: 200px;
+  height: 200px;
+  background-color: #f2f2f2;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.game-box:hover {
+  transform: scale(1.2);
+}
+
+.game-box a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.game-box a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.box-game {
+  background-color: blue;
+}
+.highlow {
+  background-color: orange;
+}
+
+.dice-roll {
+  background-color: aqua;
+}
+
+.blackjack {
+  background-color: brown;
+}
+
+.memory-game {
+  background-color: springgreen;
+}
+
+.tic-tac-toe {
+  background-color: tomato;
+}
+
+@media only screen and (max-width: 550px) {
+  .boxes-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .boxes-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .boxes-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .game-box {
+    width: 15rem;
+    height: 10rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1336px) {
+  .boxes-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .game-box {
+    width: 20rem;
+    height: 10rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .boxes-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .game-box {
+    width: 25rem;
+    height: 10rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+/* @media screen and (min-width: 1334px) {
+  .game-page {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .game-box {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media screen and (min-width: 896px) {
+  .game-page {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .game-box {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media screen and (min-width: 792px) {
+  .game-page {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .game-box {
+    width: 35%;
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  .game-page {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .game-box {
+    width: 35%;
+    height: 30%;
+  }
+} */
+
+.invalid {
+  background-color: gray;
+  user-select: none;
+  cursor: default;
+  transform: none !important;
+}

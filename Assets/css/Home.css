@@ -1,0 +1,117 @@
+/*Styles for the container*/
+
+h1 {
+  color: white;
+  text-shadow: 2px 5px 8px black;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 5px 8px black;
+}
+
+p {
+  text-shadow: 2px 5px 8px black;
+  color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ff4848;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    opacity: 1;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+  }
+
+  .container2 {
+    margin: auto;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .button {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+  }
+  
+  .button button {
+    border-radius: 10px;
+    height: 2.5rem;
+    border-color: transparent;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
+    transition: .5s;
+    background-color: #4876ff;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    cursor: pointer;
+  }
+
+  h3 {
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
+  }
+
+  .button button:hover {
+    transform: scale(1.3);
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  /*Styles for the header*/
+  header {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em;
+  }
+  /*Styles for the description*/
+  .description {
+    text-align: center;
+    color: rgb(12, 12, 12);
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  

@@ -1,0 +1,108 @@
+* {
+  text-align: center;
+  user-select: none;
+}
+.container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+.diamond {
+  background-color: #00a9ea;
+}
+.ruby {
+  background-color: red;
+}
+.sapphire {
+  background-color: blue;
+}
+.emerald {
+  background-color: #06cf06;
+}
+
+.gold {
+  background-color: #f0c100;
+}
+
+.amethyst {
+  background-color: #d12ef1;
+}
+
+.sliver {
+  background-color: #98a2a2;
+}
+
+.box {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.box img {
+  width: 200px;
+  height: 200px;
+}
+
+.purchase input[type="button"] {
+  background-color: #76ff6a;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-color: transparent;
+  border-radius: 20px;
+  text-shadow: 2px 2px 7px black;
+  box-shadow: 2px 2px 12px black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.purchase input:hover {
+  background-color: rgb(0, 255, 0);
+  transform: scale(1.2);
+}
+
+.balance {
+  color: white;
+  text-shadow: 2px 2px 7px black;
+  font-size: 20px;
+  margin: 0;
+  text-align: left !important;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+div.bg {
+  opacity: 0.5;
+}
+#text {
+  font-size: 250%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 7px black;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.unhide {
+  opacity: 1 !important;
+}

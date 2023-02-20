@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile | Blinko</title>
+    <link rel="stylesheet" href="./Assets/css/Nav-bar.css" />
+    <link rel="stylesheet" href="./Assets/css/Profile.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn140.picsart.com/248038099025212.png"
+      type="image/x-icon"
+    />
+    <script src="./Assets/js/Nav-bar.js" defer></script>
+    <script src="./Assets/js/Profile.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Game.html">Games</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a class="active" href="Profile.html">Profile</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a id="balance">Balance:</a></li>
+      </ul>
+    </nav>
+    <h1>Profile!</h1>
+
+    <div id="container" class="container">
+        <div class="avatar">
+            <img id="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR82DN9JU-hbIhhkPR-AX8KiYzA4fBMVwjLAG82fz7GLg&s" alt="profile">
+        </div>
+        <div class="name">
+            <h3 id="name">Retobe</h3>
+        </div>
+        <div class="username">
+            <h3 id="username">@retobe</h3>
+        </div>
+        <div class="quote">
+            <h3 id="quote">"The future belongs to those who believe in the beauty of their dreams."</h3>
+        </div>
+        <div class="networth">
+            <h3 id="networth"></h3>
+        </div>
+        <div class="balance">
+            <h3 id="balance"></h3>
+        </div>
+        <div class="editBtn">
+          <input type="submit" value="Edit Profile" id="editbtn" onclick="window.location.replace('createProfile.html')">
+        </div>
+    </div>
+
+    <div class="header">
+      <h1>Inventory</h1>
+    </div>
+    <div class="container inventory">
+      <div class="diamond">
+        <img src="./Assets/images/Items/Diamond.png" alt="Diamond" />
+        <h3 class="amount" id="1">0</h3>
+      </div>
+      <div class="ruby">
+        <img src="./Assets/images/Items/Ruby.png" alt="Ruby" />
+        <h3 class="amount" id="2">0</h3>
+      </div>
+      <div class="sapphire">
+        <img src="./Assets/images/Items/Sapphire.png" alt="Sapphire">
+        <h3 class="amount" id="3">0</h3>
+      </div>
+      <div class="emerald">
+        <img src="./Assets/images/Items/Emerald.png" alt="Emerald">
+        <h3 class="amount" id="4">0</h3>
+      </div>
+      <div class="gold">
+        <img src="./Assets/images/Items/Gold.png" alt="Gold">
+        <h3 class="amount" id="5">0</h3>
+      </div>
+      <div class="amethyst">
+        <img src="./Assets/images/Items/Amethyst.png" alt="Amethyst">
+        <h3 class="amount" id="6">0</h3>
+      </div>
+      <div class="sliver">
+        <img src="./Assets/images/Items/Sliver.png" alt="Sliver">
+        <h3 class="amount" id="7">0</h3>
+      </div>
+    </div>
+   
+    <footer>© 2022 Retobe</footer>
+  </body>
+</html>

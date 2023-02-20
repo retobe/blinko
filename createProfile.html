@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Assets/css/Nav-bar.css" />
+    <link rel="stylesheet" href="./Assets/css/createProfile.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/Nav-bar.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    rel="stylesheet"
+    />
+    <script src="./Assets/js/Create.js"></script>
+    <title>Create Profile | Blinko</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Game.html">Games</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a class="active" href="Profile.html">Profile</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header">
+        <h1 id="title">Profile hasn't been created!</h1>
+      </div>
+
+      <div class="container">
+        <div class="img">
+          <img id="blah" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR82DN9JU-hbIhhkPR-AX8KiYzA4fBMVwjLAG82fz7GLg&s" alt="Profile">
+        </div>
+        <div class="avatar">
+          <label for="avatar">Avatar [png, jpeg, jpg, and gifs]:</label>
+          <input accept="image/*" onchange="loadFile(event)" type="file" name="image" id="image">
+        </div>
+        <div class="name">
+          <label for="name">Name:</label><br>
+          <input placeholder="John Doe" type="text" maxlength="10" name="name" id="name">
+        </div>
+        <div class="username">
+          <label for="username">Username:</label><br>
+          <input placeholder="@johndoe" type="text"maxlength="10" title="No Special Characters" name="username" id="username">
+        </div>
+        <div class="quote">
+          <label for="quote">Quote:</label><br>
+          <input placeholder="Quote/Inspiration" maxlength="25" type="text" value="" name="quote" id="quote">
+        </div>
+        <div class="color">
+          <label for="color">Profile Color:</label><br>
+          <input type="color" name="color" id="color">
+        </div>
+        <div class="submit">
+          <button type="submit" onclick="Submit();" id="submit">Submit</button>
+        </div>
+      </div>
+
+
+</body>
+</html>

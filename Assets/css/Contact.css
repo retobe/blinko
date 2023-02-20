@@ -1,0 +1,121 @@
+.who,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 5px 8px black;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 5px 8px black;
+}
+
+p {
+  text-shadow: 2px 5px 8px black;
+  color: white;
+}
+
+.card {
+  width: 20rem;
+  background-color: rgb(255, 255, 255);
+  height: 10rem;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 5rem;
+}
+
+.card-avatar img {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  box-shadow: 2px 5px 8px rgb(94, 94, 94);
+  border-radius: 50%;
+}
+
+.card-title a {
+  text-decoration: none;
+  font-size: 20px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.card-title a:hover {
+  color: rgb(255, 91, 91);
+}
+
+.who {
+  background-color: red;
+  box-shadow: 2px 5px 8px rgb(94, 94, 94);
+  padding: 5px;
+  border-radius: 2rem;
+  width: 15rem;
+  margin: auto;
+}
+
+#L {
+  opacity: 0;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.5em;
+}
+
+.social-icons i {
+  color: #000000;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.social-icons a:before {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ff003c;
+  background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}

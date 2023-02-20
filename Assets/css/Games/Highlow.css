@@ -1,0 +1,58 @@
+* {
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.number, .balance {
+  font-size: 150%;
+}
+
+
+.btn {
+  outline-color:transparent;
+  border-color:transparent;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  width: 25fr;
+  cursor: pointer;
+  transition: .5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+.lower {
+  color: white;
+  background-color: red;
+  font-size: 23px;
+  text-shadow: 5px 4px 12px black;
+}
+.higher {
+  color: white;
+  background-color: green;
+  font-size: 23px;
+  text-shadow: 5px 4px 12px black;
+}
+.jackpot {
+  color: white;
+  background-color: yellow;
+  font-size: 23px;
+  text-shadow: 5px 4px 12px black;
+}
+
+@media screen and (max-width:400px) {
+  .container {
+    grid-template-columns: 150px;
+    grid-gap: 1rem;
+  }
+}

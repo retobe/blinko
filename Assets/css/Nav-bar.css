@@ -1,0 +1,74 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  /* background: url("../images/clouds.gif"); */
+  background-color: #c7c7c7;
+  background-blend-mode:saturation;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.active {
+  background-color: #ff0b0b;
+}
+
+footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+}
+
+h1 {
+  text-align: center; /* center the heading */
+  margin-top: 50px; /* add some space above the heading */
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+p {
+  text-shadow: 2px 2px 8px black;
+  color: white;
+}
+
+nav {
+  background-color: rgb(92, 92, 92); /* dark gray background color */
+}
+
+nav ul {
+  list-style-type: none; /* remove bullet points */
+  margin: 0; /* remove margin */
+  padding: 0; /* remove padding */
+  overflow: hidden; /* prevent list items from breaking to new line */
+}
+
+nav li {
+  float: left; /* make list items float next to each other */
+}
+
+nav a {
+  display: block; /* make links take up full width of list item */
+  color: rgb(255, 255, 255); /* white text color */
+  text-align: center; /* center text */
+  padding: 20px 16px; /* add some padding */
+  text-decoration: none; /* remove underline */
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+
+nav a:hover {
+  background-color: #ff5757; /* dark gray background color on hover */
+}
+
+#balance:hover{
+  background-color: transparent;
+}

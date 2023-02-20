@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shop</title>
+    <link rel="stylesheet" href="./Assets/css/Shop.css" />
+    <link rel="stylesheet" href="./Assets/css/Nav-bar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets/images/favicons/shop.png"
+      type="image/x-icon"
+    />
+    <script src="./Assets/js/Nav-bar.js" defer></script>
+    <script src="./Assets/js/Shop.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Game.html">Games</a></li>
+        <li><a class="active" href="Shop.html">Shop</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a id="balance">Balance:</a></li>
+      </ul>
+    </nav>
+
+    <h1 id="text">Successful</h1>
+
+    <div class="header">
+      <h1>Welcome to the Shop!</h1>
+    </div>
+
+    <div class="container">
+      <div class="diamond box">
+        <div class="title">
+          <h2>Diamond</h2>
+        </div>
+        <div class="image"><img src="./Assets/images/Items/Diamond.png" alt="Diamond" /></div>
+        <div class="price">
+          <h3>$1,000,000</h3>
+        </div>
+        <div class="description">
+          <p>A clear and hard gemstone, prized for its brilliance and fire.</p>
+        </div>
+        <div class="purchase">
+          <input type="button" id="1" value="Purchase" onclick="purchase(this.id)" />
+        </div>
+      </div>
+      <div class="ruby box">
+        <div class="title">
+          <h2>Ruby</h2>
+        </div>
+        <div class="image"><img src="./Assets/images/Items/Ruby.png" alt="Ruby" /></div>
+        <div class="price">
+          <h3>$750,000</h3>
+        </div>
+        <div class="description">
+          <p>A red gemstone that symbolizes passion and is known for its rich color and durability.</p>
+        </div>
+        <div class="purchase">
+          <input type="button" id="2" value="Purchase" onclick="purchase(this.id)" />
+        </div>
+      </div>
+      <div class="sapphire box">
+        <div class="title">
+          <h2>Sapphire</h2>
+        </div>
+        <div class="image"><img src="./Assets/images/Items/Sapphire.png" alt="Sapphire" /></div>
+        <div class="price">
+          <h3>$500,000</h3>
+        </div>
+        <div class="description">
+          <p>A durable and precious gemstone that comes in a variety of colors, with blue being the most popular.</p>
+        </div>
+        <div class="purchase">
+          <input type="button" id="3" value="Purchase" onclick="purchase(this.id)" />
+        </div>
+      </div>
+      <div class="emerald box">
+        <div class="title">
+          <h2>Emerald</h2>
+        </div>
+        <div class="image"><img src="./Assets/images/Items/Emerald.png" alt="Emerald" /></div>
+        <div class="price">
+          <h3>$250,000</h3>
+        </div>
+        <div class="description">
+          <p>A green gemstone prized for its unique color and rarity, and often associated with growth and renewal.</p>
+        </div>
+        <div class="purchase">
+          <input type="button" id="4" value="Purchase" onclick="purchase(this.id)" />
+        </div>
+      </div>
+      <div class="gold box">
+        <div class="title">
+          <h2>Gold</h2>
+        </div>
+        <div class="image"><img src="./Assets/images/Items/Gold.png" alt="Gold" /></div>
+        <div class="price">
+          <h3>$100,000</h3>
+        </div>
+        <div class="description">
+          <p>A dense and soft metal, prized for its beauty and rarity, and used in jewelry and currency.</p>
+        </div>
+        <div class="purchase">
+          <input type="button" id="5" value="Purchase" onclick="purchase(this.id)" />
+        </div>
+      </div>
+      <div class="amethyst box">
+        <div class="title">
+          <h2>Amethyst</h2>
+        </div>
+        <div class="image"><img src="./Assets/images/Items/Amethyst.png" alt="Amethyst" /></div>
+        <div class="price">
+          <h3>$75,000</h3>
+        </div>
+        <div class="description">
+          <p>A purple gemstone that ranges in color from pale lilac to deep violet, and is often used in jewelry.</p>
+        </div>
+        <div class="purchase">
+          <input type="button" id="6" value="Purchase" onclick="purchase(this.id)" />
+        </div>
+      </div>
+      <div class="sliver box">
+        <div class="title">
+          <h2>Sliver</h2>
+        </div>
+        <div class="image"><img src="./Assets/images/Items/Sliver.png" alt="Sliver" /></div>
+        <div class="price">
+          <h3>$20,000</h3>
+        </div>
+        <div class="description">
+          <p>A soft and lustrous metal, valued for its beauty and versatility, and used in jewelry, coins, and other items.</p>
+        </div>
+        <div class="purchase">
+          <input type="button" id="7" value="Purchase" onclick="purchase(this.id)" />
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2022 Retobe</footer>
+  </body>
+</html>

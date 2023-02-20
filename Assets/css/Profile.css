@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 30rem;
+    max-height: 45rem;
+    height: 50rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 5px solid black;
+    box-shadow: 2px 2px 10px black;
+    padding-top: 35px;
+}
+
+.inventory {
+    background: linear-gradient(#636363, #ffffff);
+    border:2px solid black;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 2rem;
+    max-width: 70rem;
+    max-height: 40rem;
+    justify-content:center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.inventory img {
+    width: 100px;
+    height: 100px;
+    transition: .5s;
+}
+
+
+.inventory img:hover {
+    transform: scale(1.2);
+}
+
+.amount {
+    color:black;
+    margin-bottom: 3rem;
+}
+
+.inventory.none {
+    opacity: .5;
+}
+
+.header h1 {
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    box-shadow: 2px 2px 10px black;
+    border: 10px double black;
+}
+
+.name {
+    font-size: larger;
+    text-transform: capitalize;
+    text-shadow: none !important;
+}
+
+.username {
+    opacity: .5;
+    text-transform: lowercase;
+}
+
+.quote {
+    opacity: .6;
+}
+
+.networth {
+    color:green;
+}
+
+.balance {
+    color: green;
+    margin-bottom: 5rem;
+}
+
+#editbtn{
+    width: 5.5rem;
+    border-color: transparent;
+    background-color: #f85555;
+    transition: .5s;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+#editbtn:hover {
+    background-color: indianred;
+    transform: scale(1.3);
+}

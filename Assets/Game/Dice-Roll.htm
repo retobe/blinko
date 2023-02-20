@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dice Roll | Games</title>
+    <link rel="stylesheet" href="../css/Nav-bar.css" />
+    <link rel="stylesheet" href="../css/Grid.css" />
+    <link rel="stylesheet" href="../css/Games/Dice-roll.css" />
+    <script src="../js/Dice-roll.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn140.picsart.com/248038099025212.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../../Home.html">Home</a></li>
+        <li><a href="../../About.html">About</a></li>
+        <li><a class="active" href="../../Game.html">Games</a></li>
+          <li><a href="../../Shop.html">Shop</a></li>
+        <li><a href="../..Profile.html">Profile</a></li>
+        <li><a href="../../Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h3 class="desc">
+      Put down your guesses down at the bottom. If you get at least one right,
+      you get money, if you don't either then lose money :/<br />It's worth it
+      trust me >:)
+    </h3>
+    <div class="number-container">
+      
+      <div class="input-number">
+        <input type="number" id="dice1" max="6" min="1" value="0">
+      </div>
+      <div class="input-number">
+        <input type="number" id="dice2" max="6" min="1" value="0">
+      </div>
+            
+
+      <div class="dice1">
+        <p id="outcome1"></p>
+      </div>
+      <div class="dice2">
+        <p id="outcome2"></p>
+      </div>
+    </div>
+    <input class="submit" type="submit" id="submit" value="Roll Dice" onclick="rollDices();" />
+    <p id="results"></p>
+    <p id="balance" class="balance"></p>
+
+    <footer>© 2022 Retobe</footer>
+  </body>
+</html>

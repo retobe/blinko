@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memory | Games</title>
+    <link rel="stylesheet" href="../css/Nav-bar.css" />
+    <link rel="stylesheet" href="../css/Grid.css" />
+    <link rel="stylesheet" href="../css/Games/Memory.css" />
+    <script src="../js/Memory.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../images/favicons/brain.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../../Home.html">Home</a></li>
+        <li><a href="../../About.html">About</a></li>
+        <li><a class="active" href="../../Game.html">Games</a></li>
+          <li><a href="../../Shop.html">Shop</a></li>
+        <li><a href="../..Profile.html">Profile</a></li>
+        <li><a href="../../Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- Directions on how to play the gamemode -->
+    <div class="header">
+      <h1>Directions</h1>
+      <h5>
+        To play this game you must first choose a card, and then the cards will
+        be shuffled and you need to guess the correct card to obtain currency.
+        It costs 500 to play, 5-10k If guessed correct, 5k Lost if guessed
+        incorrectly.
+      </h5>
+    </div>
+
+    <!-- Restart Button -->
+    <div class="restart">
+        <input class="btn" type="reset" value="Restart" onclick="reloadgame()">
+    </div>
+
+    <!-- message -->
+    <div class="message">
+      <h2 id="results"></h2>
+      <h2 id="balance"></h2>
+    </div>
+
+
+    <!-- The actual game -->
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://www.pngall.com/wp-content/uploads/4/Playing-Card-PNG-Image.png"
+            alt="Card"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img
+            src="../images/king.png"
+            alt="Card"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img
+            src="../images/joker.png"
+            alt="Card"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--The End-->
+    <footer>© 2022 Retobe</footer>
+  </body>
+</html>

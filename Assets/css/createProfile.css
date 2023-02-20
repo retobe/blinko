@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    background: linear-gradient(#b64949, #ffffff);
+    margin: auto;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 30rem;
+    max-height: 45rem;
+    height: 50rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.img img {
+    align-items: center;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 90px;
+}
+
+input {
+    border-radius: 10px;
+    border-color: transparent;
+    transition: .5s;
+    background: rgb(255, 255, 255);
+    outline-color: transparent;
+    margin-bottom: 2rem;
+}
+
+input:focus {
+    transform: scale(2);
+}
+
+#submit {
+    border-radius: 10px;
+    width: 5rem;
+    color:white;
+    border-color: transparent;
+    transition: .5s;
+    background: rgb(0, 0, 0);
+    outline-color: transparent;
+}
+
+#submit:hover {
+    transform: scale(1.2);
+}
